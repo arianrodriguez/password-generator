@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'ABeeZee', sans-serif;
+}
+
+body {
+    background-color: #BFEAF5;
+}
+
+.container {
+    width: 840px;
+    margin: 100px auto;
+}
+
+.container h1 {
+    font-size: 48px;
+    text-align: center;
+}
+
+.container > p {
+    font-size: 24px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.content-config-pass {
+    margin: 50px 0;
+}
+
+.display-pass {
+    background-color: #EAFDFC;
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(0,0,0,.3);
+    display: flex;
+    align-items: center;
+}
+
+.content-display {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.output-pass {
+    width: 90%;
+    padding: 0 30px;
+    font-size: 32px;
+}
+
+.icon-copy-pass {
+    width: 10%;
+    font-size: 52px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.options-advanced {
+    height: 50px;
+    background-color: #EAFDFC;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(0,0,0,.3);
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.desc-options {
+    width: 80%;
+}
+
+.desc-options p, .scroll-options i:hover, .icon-copy-pass i:hover {
+    color: #4f4f4f;
+}
+
+.scroll-options {
+    width: 20%;
+    text-align: right;
+    cursor: pointer;
+}
+
+.content-options {
+    width: 100%;
+    background-color: #EAFDFC;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(0,0,0,.3);
+    display:none;
+}
+
+.content-options > div {
+    width: 740px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.content-options h3 {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.white-row {
+    background-color: rgba(167, 167, 167, 0.211);
+    width: auto;
+    height: 2px;
+    margin: 5px 0 30px;
+}
+
+.flex-options {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.length-pass {
+    width: 60%;
+}
+
+.length-pass h6 {
+    font-size: 16px;
+    font-weight: 400;
+    width: max-content;
+    margin-left: 15px;
+}
+
+.flex-range {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+input[type="range"] {
+    width: 80%;
+}
+
+
+input[type='range'], input[type='range']::-webkit-slider-runnable-track, input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track { /*la barra*/
+    background-color: #BFEAF5;
+    height: 8px;
+    border-radius: 5px;
+}
+
+input[type="range"]::-webkit-slider-thumb { /*el botón*/
+    background-color: #82AAE3;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-top: -10px; /*para webkit (Chromiun, es necesario un margin top negativo para reubicar el botón)*/
+    cursor: pointer;
+}
+
+.label-length {
+    width: max-content;
+    background-color: #82AAE3;
+    padding: 8px 20px;
+    border-radius: 5px;
+    color: #EAFDFC;
+    box-shadow: 1px 1px 10px #BFEAF5;
+}
+
+.custom-options {
+    width: max-content;
+}
+
+.custom-options div {
+    margin: 20px 0;
+}
+
+.btn-generate {
+    text-transform: uppercase;
+    width: max-content;
+    margin: 0 auto;
+    background-color: #82AAE3;
+    color: #EAFDFC;
+    border-radius: 50px;
+    padding: 10px 30px;
+    box-shadow: 1px 1px 5px rgb(0,0,0,.3);
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-generate:hover {
+    background-color: #82aae3be;
+}

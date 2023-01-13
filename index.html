@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS--> 
+    <link rel="stylesheet" href="style.css">
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap" rel="stylesheet">
+    <!--FONT AWESOME-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Generador de contraseñas</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Genere contraseñas de manera segura, fácil y rápido</h1>
+        <p>Pequeña creación de Arian Rodriguez</p>
+
+        <div class="content-config-pass">
+            <section class="display-pass">
+                <div class="content-display">
+                    <div class="output-pass"></div>
+                    <div class="icon-copy-pass"><i class="fa-regular fa-copy"></i></div>
+                </div>
+            </section>
+            <section class="options-advanced">
+                <div class="desc-options">                <p>Opciones avanzadas</p>
+                </div>
+                <div class="scroll-options"><i class="fa-sharp fa-solid fa-arrow-down"></i></div>
+            </section>
+            <section class="content-options">
+                <div>
+                    <h3>Tu contraseña a tu gusto</h3>
+                    <div class="white-row"></div>
+                    <div class="flex-options">
+                        <div class="length-pass">
+                            <h6>Número de caracteres</h6>
+                            <div class="flex-range">
+                                <input type="range" id="range-length" min="4" max="20" value="8" oninput="change_value_slider()">
+                                <div class="label-length">8</div>
+                            </div>
+                        </div>
+                        <div class="custom-options">
+
+                            <div>
+                                <label for="numbers">Números</label>
+                                <input type="checkbox" id="numbers" checked>
+                            </div>
+                            
+                            <div>
+                                <label for="caracter-special">Caracteres especiales</label>
+                                <input type="checkbox" id="caracter-special">
+                            </div>
+
+                           <div>
+                                <label for="uppercase-letters">Letras en mayúscula</label>
+                                <input type="checkbox" id="uppercase-letters">
+                           </div>
+
+                           <div>
+                                <label for="lowercase-letters">Letras en minúscula</label>
+                                <input type="checkbox" id="lowercase-letters" checked>
+                           </div>
+
+                        </div>
+                    </div>
+
+                    <div class="btn-generate">Generar</div>
+
+                </div>
+            </section>
+        </div>
+       
+    </div>
+
+    <script src="animation.js"></script>
+    <script src="pass-generate.js"></script>
+
+</body>
+</html>

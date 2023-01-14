@@ -16,9 +16,7 @@ function fill_pass(length) {
 function display_pass(pass) {
     output.textContent = pass.join``;
 }
-
-
-btn_generate.addEventListener('click', () => {
+function generate_pass(){
     const length = document.querySelector('#range-length');
     const digits = document.querySelector('#numbers');
     const simbols = document.querySelector('#caracter-special');
@@ -56,4 +54,8 @@ btn_generate.addEventListener('click', () => {
         }
     }
     display_pass(pass_generated);
-});
+}
+
+btn_generate.addEventListener('click', generate_pass);
+/*genere una contraseña apenas se inicie la página web (DOMContentLoaded=>el árbol html ha cargado correctamente) */
+document.addEventListener('DOMContentLoaded', generate_pass);

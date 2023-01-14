@@ -89,7 +89,7 @@ body {
     background-color: #EAFDFC;
     border-radius: 10px;
     box-shadow: 1px 1px 10px rgb(0,0,0,.3);
-    display:none;
+    display: none;
 }
 
 .content-options > div {
@@ -170,8 +170,16 @@ input[type="range"]::-webkit-slider-thumb { /*el botón*/
     width: max-content;
 }
 
-.custom-options div {
+.custom-options > div {
     margin: 20px 0;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    width: 100%;
+}
+
+.custom-options div label {
+    width: 90%;
 }
 
 .btn-generate {
@@ -189,4 +197,34 @@ input[type="range"]::-webkit-slider-thumb { /*el botón*/
 
 .btn-generate:hover {
     background-color: #82aae3be;
+}
+
+input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #BFEAF5;
+    font: inherit;
+    color: currentColor;
+    width: 1.5em;
+    height: 1.5em;
+    border: 0.15em solid #82aae324;
+    border-radius: 0.15em;
+    transform: translate(0.5em);
+    display: grid;
+    place-content: center;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    box-shadow: inset 1em 1em #82AAE3;
+    border-radius: 5px;
+}
+
+input[type="checkbox"]:checked::before {
+    transform: scale(1.2);
 }

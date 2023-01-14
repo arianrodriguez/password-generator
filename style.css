@@ -228,3 +228,56 @@ input[type="checkbox"]::before {
 input[type="checkbox"]:checked::before {
     transform: scale(1.2);
 }
+
+@media screen and (max-width: 870px) {
+    .container {
+        width: auto;
+        margin: 100px 50px;
+    }
+    .content-options {
+        width: auto;
+    }
+    .flex-options {
+        display: block;
+        width: max-content;
+        margin: 0 auto;
+    }
+    .content-options > div {
+        width: auto;
+    }
+    .white-row {
+        margin: 10px 15px 20px; 
+    }
+    .content-options h3 {
+        text-align: center  ;
+    }
+    .length-pass {
+        width: max-content;
+    }
+    .flex-range input{
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width: 665px) {
+    .icon-copy-pass {
+        width: auto;
+        margin: 0 15px;
+    }
+}
+
+@media screen and (max-width: 578px) {
+    .icon-copy-pass {
+        display: none;
+    }
+    .display-pass, .content-display {
+        display: block;
+        width: auto;
+    }
+    .output-pass {
+        width: max-content;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+}

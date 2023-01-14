@@ -59,3 +59,5 @@ function generate_pass(){
 btn_generate.addEventListener('click', generate_pass);
 /*genere una contraseña apenas se inicie la página web (DOMContentLoaded=>el árbol html ha cargado correctamente) */
 document.addEventListener('DOMContentLoaded', generate_pass);
+/*genere una nueva contraseña cada vez que modifica el número de caracteres*/
+document.querySelector('#range-length').addEventListener('click', generate_pass);
